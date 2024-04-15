@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap");
 * {
   margin: 0;
@@ -12,6 +13,7 @@ body {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #1a471c;
+  background-color: #f8f8f8;
 }
 
 img {
@@ -41,9 +43,25 @@ img {
 }
 .header__logo_img {
   width: 150px;
+  border-radius: 10px;
 }
 .header__logo_text {
   font-size: 30px;
+}
+.header__logo_login {
+  margin-bottom: 80px;
+  margin-top: 15px;
+}
+.header__find {
+  height: 40px;
+  width: 300px;
+  border-radius: 15px;
+  border: 2px solid #1a471c;
+  background-image: url("./img/icons8-лупа-64.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-left: 50px;
+  background-position: 10px;
 }
 .header__nav {
   display: flex;
@@ -74,6 +92,10 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+.main__btn {
+  display: flex;
+  gap: 10px;
+}
 .main__desc {
   width: 770px;
   display: flex;
@@ -87,8 +109,8 @@ img {
   font-size: 50px;
 }
 .main__desc_btn {
-  width: 220px;
   height: 75px;
+  padding: 0 20px;
   border-radius: 18px;
   background-color: #1a471c;
   display: flex;
@@ -108,91 +130,15 @@ img {
   margin: auto auto;
 }
 
-.subheadding {
-  width: 737px;
-  margin-top: 96px;
-  margin-bottom: 93px;
-}
-.subheadding__title {
-  font-size: 50px;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-  text-align: center;
-}
-.subheadding__text {
-  color: #354336;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  letter-spacing: 0.22px;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 56px;
-}
-.cards__item {
-  width: 549px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.cards__item_img_top-right {
-  border-top-right-radius: 15%;
-}
-.cards__item_img_top-left {
-  border-top-left-radius: 15%;
-}
-.cards__item_img_bottom-right {
-  border-bottom-right-radius: 15%;
-}
-.cards__item_img_bottom-left {
-  border-bottom-left-radius: 15%;
-}
-.cards__item_desc {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.cards__item_text {
-  font-size: 25px;
-  letter-spacing: 0.5px;
-}
-.cards__item_sort {
-  color: #354336;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  letter-spacing: 0.22px;
-}
-.cards__item_btn {
-  width: 70px;
-  height: 70px;
-  background-color: #f4f0ec;
-  border-radius: 35px;
-  cursor: pointer;
-}
-.cards__item_btn-vector {
-  width: 8px;
-  height: 18px;
-  margin: 0 auto;
-}
-.cards__item_btn:hover {
-  background-color: #CDA274;
-}
-
 .count {
-  background-color: #f4f0ec;
+  background-color: white;
   height: 457px;
   margin-top: 101px;
   margin-bottom: 96px;
   display: flex;
 }
 .count__counter {
-  width: 1082px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -203,21 +149,20 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 300px;
 }
 .count__counter_block:not(:first-child) {
-  border-left: 1px solid #cda274;
-  padding-left: 76px;
+  border-left: 2px solid #1a471c;
 }
 .count__num {
-  color: #CDA274;
+  color: #147317;
   font-size: 85px;
   letter-spacing: 1.7px;
 }
 .count__text {
   color: #354336;
   font-family: "Jost", sans-serif;
-  font-size: 22px;
-  letter-spacing: 0.22px;
+  font-size: 25px;
 }
 
 .articles__headdig {
@@ -377,7 +322,7 @@ img {
 }
 
 .sites__logo:hover path {
-  fill: #CDA274;
+  fill: #147317;
 }
 
 .blog-nav {
@@ -472,7 +417,7 @@ img {
   width: 52px;
   height: 52px;
   color: #1a471c;
-  border: 1px solid #CDA274;
+  border: 1px solid #147317;
   border-radius: 35px;
   display: flex;
   justify-content: center;
@@ -536,7 +481,7 @@ img {
   height: 56px;
 }
 .details__comments_text {
-  color: #CDA274;
+  color: #147317;
   text-align: center;
   font-size: 25px;
 }
@@ -554,7 +499,7 @@ img {
 }
 .details__list ::marker {
   font-size: 20px;
-  color: #CDA274;
+  color: #147317;
   letter-spacing: 0.4px;
 }
 
@@ -589,7 +534,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #CDA274;
+  border: 1px solid #147317;
   border-radius: 18px;
 }
 .nav__btn {
@@ -603,7 +548,7 @@ img {
   cursor: pointer;
 }
 .nav__btn_active {
-  background-color: #CDA274;
+  background-color: #147317;
   color: white;
 }
 
@@ -693,7 +638,7 @@ img {
   font-size: 250px;
   font-weight: 400;
   line-height: 313px;
-  color: #CDA274;
+  color: #147317;
 }
 .notfound__left_page {
   font-size: 35px;

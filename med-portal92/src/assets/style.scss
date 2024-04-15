@@ -16,6 +16,7 @@ body {
     font-family: $main-font;
     font-weight: $text-weight;
     color: $main-colorText;
+    background-color: #f8f8f8;
 }
 
 img {
@@ -42,11 +43,29 @@ img {
 
         &_img {
             width: 150px;
+            border-radius: 10px;
         }
 
         &_text {
             font-size: 30px;
         }
+
+        &_login{
+            margin-bottom: 80px;
+            margin-top: 15px;
+        }
+    }
+
+    &__find{
+        height: 40px;
+        width: 300px;
+        border-radius: 15px;
+        border: $border-style;
+        background-image: url('./img/icons8-лупа-64.png');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        padding-left: 50px;
+        background-position: 10px;
     }
 
     &__nav {
@@ -80,6 +99,11 @@ img {
     justify-content: space-around;
     align-items: center;
 
+    &__btn{
+        display: flex;
+        gap: 10px;
+    }
+
     &__desc {
         width: 770px;
         @include flex(flex, space-between, flex-start);
@@ -92,8 +116,8 @@ img {
         }
 
         &_btn {
-            width: 220px;
             height: 75px;
+            padding: 0 20px;
             border-radius: 18px;
             background-color: $main-colorText;
             @include flex(flex, center, center);
@@ -115,113 +139,26 @@ img {
     }
 }
 
-.subheadding {
-    width: 737px;
-    margin-top: 96px;
-    margin-bottom: 93px;
-
-    &__title {
-        font-size: 50px;
-        letter-spacing: 1px;
-        margin-bottom: 8px;
-        text-align: center;
-    }
-
-    &__text {
-        color: $color-text;
-        font-family: $text-font;
-        font-size: 22px;
-        letter-spacing: 0.22px;
-        text-align: center;
-    }
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    @include flex(flex, space-between, center);
-    gap: 56px;
-
-    &__item {
-        width: 549px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-
-        &_img {
-            &_top-right {
-                border-top-right-radius: 15%;
-            }
-
-            &_top-left {
-                border-top-left-radius: 15%;
-            }
-
-            &_bottom-right {
-                border-bottom-right-radius: 15%;
-            }
-
-            &_bottom-left {
-                border-bottom-left-radius: 15%;
-            }
-        }
-
-        &_desc {
-            @include flex(flex, space-between, center);
-        }
-
-        &_text {
-            font-size: 25px;
-            letter-spacing: 0.5px;
-        }
-
-        &_sort {
-            color: $color-text;
-            font-family: $text-font;
-            font-size: 22px;
-            letter-spacing: 0.22px;
-        }
-
-        &_btn {
-            width: 70px;
-            height: 70px;
-            background-color: #f4f0ec;
-            border-radius: 35px;
-            cursor: pointer;
-        }
-
-        &_btn-vector {
-            width: 8px;
-            height: 18px;
-            margin: 0 auto;
-        }
-
-        &_btn:hover {
-            background-color: $color-decoration;
-        }
-    }
-}
-
 .count {
-    background-color: #f4f0ec;
+    background-color: white;
     height: 457px;
     margin-top: 101px;
     margin-bottom: 96px;
     display: flex;
 
     &__counter {
-        width: 1082px;
+        width: $container;
         margin: 0 auto;
         @include flex(flex, space-between, center);
 
         &_block {
             @include flex(flex, center, center);
             flex-direction: column;
+            width: 300px;
         }
 
         &_block:not(:first-child) {
-            border-left: 1px solid #cda274;
-            padding-left: 76px;
+            border-left: 2px solid #1a471c;
         }
     }
 
@@ -234,8 +171,7 @@ img {
     &__text {
         color: $color-text;
         font-family: $text-font;
-        font-size: 22px;
-        letter-spacing: 0.22px;
+        font-size: 25px;
     }
 }
 
