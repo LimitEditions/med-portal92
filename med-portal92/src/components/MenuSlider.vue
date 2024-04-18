@@ -102,6 +102,7 @@ export default {
   border-radius: 20px;
   position: relative;
   top: -30px;
+  z-index: 1;
 }
 
 .slider {
