@@ -3,7 +3,6 @@
         <div class="container header">
             <router-link to="/" class="header__logo">
                 <img class="header__logo_img" src="@/assets/img/logo.jpg" alt="Logo">
-                <!-- <h3 class="header__logo_text">МедПортал92</h3> -->
             </router-link>
             <input class="header__find" type="text" placeholder="Поиск">
             <div class="header__nav">
@@ -29,28 +28,12 @@
 
 <script>
 import Menu from './Menu.vue'
-import { v4 as uuidv4 } from 'uuid';
 import Registration from './Registration.vue';
 import LoginForm from './LoginForm.vue';
 export default {
     components: { Menu, Registration, LoginForm },
     data() {
         return {
-            links: [
-                {
-                    id: uuidv4(),
-                    title: 'Регистация',
-                    url: '/registration',
-                    img: require('@/assets/img/registration.png')
-                },
-                {
-                    id: uuidv4(),
-                    title: 'Вход',
-                    url: '/login',
-                    img: require('@/assets/img/enter.png')
-                },
-
-            ],
             isOpen: false,
             reg: false,
             enter: false,

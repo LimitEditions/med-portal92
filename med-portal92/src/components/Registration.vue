@@ -233,8 +233,5 @@ checkPassword() {
     border-radius: 10px;
     padding-left: 15px;
   }
-
-
-
 }
 </style>

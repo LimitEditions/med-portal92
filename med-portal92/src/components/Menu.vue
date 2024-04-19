@@ -4,7 +4,7 @@
             <details v-for="menu in menus" :key="menu.id" class="menu-section">
                 <summary class="menu-title">{{ menu.title }}</summary>
                 <ul>
-                    <li v-for="(option, index) in menu.options" :key="index"><a href="#">{{ option }}</a> </li>
+                    <li class="menu_list" v-for="(option, index) in menu.options" :key="index"><a href="#">{{ option }}</a> </li>
                 </ul>
             </details>
             <div @click="closeMenu"><img class="close" src="../assets/img/close.png" alt=""></div>
@@ -123,15 +123,24 @@ export default {
     max-width: 100%;
     margin: 0 auto;
 
+    &_list{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
 }
 
+.menu-title{
+    color: $main-colorText;
+    font-size: 32px;
+}
 .menu-title:last-child{
     list-style: none;
 }
 
 .menu-section {
     margin-bottom: 750px;
-    width: 200px;
+    width: 250px;
 }
 
 .menu-section summary {
@@ -145,13 +154,9 @@ export default {
     display: none;
 }
 
-.menu-section ul li {
-    margin-bottom: 5px;
-}
-
 .menu-section ul li a {
     text-decoration: none;
-    color: #333;
+    color: #354336;;
 }
 
 .menu-section ul li a:hover {

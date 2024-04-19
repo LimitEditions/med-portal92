@@ -107,6 +107,12 @@ export default {
             newses: [
                 {
                     id: uuidv4(),
+                    title: 'Донорство – не подвиг, а способ сделать мир лучше',
+                    data: '19 апреля 2024',
+                    img: require('@/assets/img/news_donorstvo.jpg')
+                },
+                {
+                    id: uuidv4(),
                     title: 'Стартовала неделя популяризации донорства крови. Расскажем, как правильно быть донором, чтобы помогать людям',
                     data: '15 апреля 2024',
                     img: require('@/assets/img/news_donor.jpg')
@@ -129,7 +135,6 @@ export default {
                     data: '22 марта 2024',
                     img: require('@/assets/img/news_tbc.jpg')
                 },
-
                 {
                     id: uuidv4(),
                     title: 'Как работают медицинские учреждения Севастополя в праздничные дни, посвященные 18 марта',

@@ -6,6 +6,7 @@ import About from '@/components/About.vue';
 import News from '@/components/News.vue';
 import Map from '@/components/Map.vue';
 import Help from '@/components/Help.vue';
+import NotFound from '@/components/NotFound.vue';
 
 const routes = [
     {
@@ -35,6 +36,10 @@ const routes = [
     {
         path: '/help',
         component: Help
+    },
+    {
+        path: "/:CatchAll(.*)",
+        component: NotFound
     },
 ]
 const router = createRouter({
