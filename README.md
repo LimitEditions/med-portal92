@@ -29,13 +29,13 @@ MedPortal92 — это проект представляет собой веб-�
 1. **Склонируйте репозиторий:**
 
     ```bash
-    git clone https://github.com/LimitEditions/iq-test-.git
+    git clone https://github.com/LimitEditions/med-portal92.git
     ```
 
 2. **Перейдите в директорию проекта:**
 
     ```bash
-    cd iq-test-
+    cd med-portal92
     ```
 
 3. **Установите зависимости:**
